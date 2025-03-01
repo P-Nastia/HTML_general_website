@@ -1,0 +1,42 @@
+﻿
+.my_container{
+    padding:0;
+    margin:auto; 
+    width: 1280px;
+}
+
+    .my_container .my_center { /* належить  класу my_container */
+        text-align: center;
+    }
+
+.img_block
+
+{
+    border: 2px solid red;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.linkTo {
+    padding: 10px 20px;
+    color: whitesmoke;
+    background-color: #6a559f;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+    .linkTo:hover {
+        background-color: #422e72
+    }
+
+img {
+    max-width: 300pt;
+    max-height: 300pt
+}
+
+
+
+

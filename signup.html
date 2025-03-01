@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="/Images/petIcon.png" rel="icon" type="image/png" />
+    <title>Pet shop</title>
+    <link href="/css/style.css" rel="stylesheet" />
+
+    <link href="/CSS/IvanStyleSheet.css" rel="stylesheet" />
+    <link href="/CSS/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="/js/site.js"></script>
+</head>
+
+<body style="padding: 200px 700px">
+
+    <script>loadDOM('/partials/header.html')</script>
+
+    <div>
+        <img class="mb-4" src="/Images//petIcon.png" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">Sign up</h1>
+
+        <div class="form-floating" style=" margin: 5px">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+        </div>
+        <div style=" display:flex;">
+            <div class="form-floating" style="width: 250px; margin: 5px">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating" style="width: 250px; margin: 5px">
+                <input type="password" class="form-control" id="floatingPasswordCheck" placeholder="PasswordCheck">
+                <label for="floatingPasswordCheck">Repeat password</label>
+            </div>
+        </div>
+
+        <div style=" display:flex;">
+            <div class="form-floating" style="width:250px; margin: 5px">
+                <input type="password" class="form-control" id="floatingName" placeholder="Name">
+                <label for="floatingName">Name</label>
+            </div>
+            <div class="form-floating" style="width: 250px; margin: 5px">
+                <input type="password" class="form-control  inputBox" id="floatingSurname" placeholder="Surname">
+                <label for="floatingSurname">Surname</label>
+            </div>
+        </div>
+
+        <div style="padding:5px">
+            <div class="form-floating">
+                <input type="date" class="form-control" id="floatingDate">
+                <label for="floatingDate">Date</label>
+            </div>
+        </div>
+        <div style="padding:5px">
+            <div class="form-floating">
+                <input maxlength="13" type="tel" class="form-control" id="floatingPhone" placeholder="Phone" />
+                <label for="floatingPhone">Phone +380 _ _ _ _ _ _ _ _ _</label>
+            </div>
+        </div>
+
+        <div class="form-check text-start my-3">
+            <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Remember me
+            </label>
+        </div>
+        <button class="btn btn-primary w-100 py-2" type="submit">Signup</button>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

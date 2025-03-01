@@ -1,0 +1,223 @@
+﻿* {
+    box-sizing: border-box; // для адаптації
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"]{ // якщо якийсь клас починається з col-
+    float:left;
+    padding:15px;
+}
+
+html{
+    font-size: 22px; // відносно цього будуть налаштовуватися rem (1 rem = 22px)
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background-color: #ad96efcc;
+    color: whitesmoke;
+    padding: 15px;
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+.menu{
+    ul{ // настройка пунктів списку
+        list-style-type: none;
+        margin:0;
+        padding:0;
+    }
+
+    li{
+        cursor: pointer;
+        padding: 8px;
+        margin-top: 7px;
+        bottom: 7px;
+        background-color:#d295e1d4;
+        color: whitesmoke;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); // тінь
+
+    }
+
+    li:hover{ // коли над списком мишка проходить
+        background-color:#b371c3;
+    }
+}
+
+.aside{
+    background-color:#84acf6e1;
+    padding: 15px;
+    color: whitesmoke;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer{
+    background-color: #5e9c4cda;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.container{
+    width: 1320px; // максимальна ширина для будь-якого екрану
+    margin: auto; // по центру ставить
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75.33%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+
+.col-lg-1 {
+    width: 8.33%;
+}
+
+.col-lg-2 {
+    width: 16.66%;
+}
+
+.col-lg-3 {
+    width: 25%;
+}
+
+.col-lg-4 {
+    width: 33.33%;
+}
+
+.col-lg-5 {
+    width: 41.66%;
+}
+
+.col-lg-6 {
+    width: 50%;
+}
+
+.col-lg-7 {
+    width: 58.33%;
+}
+
+.col-lg-8 {
+    width: 66.66%;
+}
+
+.col-lg-9 {
+    width: 75.33%;
+}
+
+.col-lg-10 {
+    width: 83.33%;
+}
+
+.col-lg-11 {
+    width: 91.66%;
+}
+
+.col-lg-12 {
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 1400px) { // застосовується лише для екрану з такою шириною
+    .container{
+        width: 1140px;
+    }
+}
+
+@media only screen and (max-width: 1200px) { // застосовується лише для екрану з такою шириною
+    .container {
+        width: 960px;
+    }
+}
+
+@media only screen and (max-width: 992px) { // застосовується лише для екрану з такою шириною
+    .container {
+        width: 720px;
+    }
+
+    [class*="col-"] {
+        width: 100%; // коли екран менший, то ширина кожної колонки 100%, тому вони переходять на новий рядок
+    }
+
+    .header {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    .right-panel {
+        display: none; // тут останній блок буде невидимий
+    }
+}
+
+@media only screen and (max-width: 768px) { // застосовується лише для екрану з такою шириною
+    [class*="col-"] {
+        width: 100%; // коли екран менший, то ширина кожної колонки 100%, тому вони переходять на новий рядок
+    }
+    .container {
+        width: 540px;
+    }
+
+    .right-panel {
+        display: none; // тут останній блок буде невидимий
+    }
+}
+
+@media only screen and (max-width: 576px) { // застосовується лише для екрану з такою шириною
+    .container {
+        width: 100%;
+    }
+}
+
