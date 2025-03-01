@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script src="/js/site.js"></script>
-    <script src="js/news.js"></script>
+    <script src="/dynamic/js/news.js"></script>
 
     <script src="/js/axios.min.js"></script>
 
@@ -146,9 +146,10 @@
     </div>
 
     <script>loadDOM('/dynamic/modal_add_news.html')</script>
-    <script>loadNews('/dynamic/news.json')</script>
+    <!--<script>loadNews('/dynamic/news.json')</script>-->
 
     <script>
+        loadNews_version_2('/dynamic/news.json'); // так теж підтягується метод і викликається
         //const save_news = document.getElementById("save_news");
         const list_news = document.getElementById("list_news");
 
